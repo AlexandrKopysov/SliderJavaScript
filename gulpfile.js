@@ -13,7 +13,7 @@ let path = {
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
     css: source_folder + "/scss/style.scss",
-    js: source_folder + "/js/script.js",
+    js: source_folder + "/js/{script.js,slick.min.js}",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp,jpeg}",
     fonts: source_folder + "/fonts/*.ttf",
   },
@@ -125,7 +125,7 @@ function js() {
     .pipe(browsersync.stream())
 }
 
-gulp.task('svgSprite', function(){
+gulp.task('svgSprite', function () {
   return gulp.src([source_folder + '/iconsprite/*.svg'])
   pipe(svgSprite({
     mode: {
@@ -135,7 +135,7 @@ gulp.task('svgSprite', function(){
       }
     },
   }))
-  .pipe(dest(path.build.img))
+    .pipe(dest(path.build.img))
 })
 
 function watchFiles(param) {

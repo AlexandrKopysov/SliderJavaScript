@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
   font-family: "Titillium+Web", sans-serif;
   color: #000;
@@ -29,158 +31,149 @@ h6 {
   margin: 0;
 }
 
-.main_background {
-  background-image: url("/img/img2.png");
-  background-position: center;
-  background-size: cover;
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.utp {
-  margin: 40% 10% 10% 10%;
-}
-
-.utp .textUtp {
-  font-size: 14px;
-  margin: 4vh 0 0 8vh;
-  letter-spacing: 1px;
-}
-
-.utp .zaglavUtp1 {
-  font-size: 4vw;
-  line-height: 0.4;
-  opacity: 0.6;
-  font-weight: bold;
-}
-
-.utp .zaglavUtp2 {
-  font-size: 6vw;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-.utp .zaglavUtp2:after {
-  content: "";
-  display: block;
-  width: 30vh;
-  height: 0.5vh;
-  background: #000;
-  margin: 2vh 0 0 -5vh;
-}
-
-.utp .button {
-  margin: 4vh 0 0 8vh;
-  height: 80px;
-  width: 350px;
-  text-decoration: none;
-  font-weight: bold;
-  background-color: #fff;
-  font-size: 18px;
-  border: 2px solid #000;
-  cursor: pointer;
-  letter-spacing: 0.05em;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.utp .button:hover {
-  background: #000;
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  font-family: Arial;
   color: #fff;
+  font-size: 25px;
 }
 
-.back {
-  background-color: #8C8D8C;
+.wrapper {
+  height: 100%;
+  padding: 50px;
 }
 
-.center {
+/* Слайдер */
+
+/* Слайдер запущен */
+
+/* Слайдер с точками */
+
+/* Ограничивающая оболочка */
+
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+
+.slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.cont1 {
+/* Слайд */
+
+/* Слайд активный (показывается) */
+
+/* Слайд основной */
+
+/* Слайд по центру */
+
+/* Клонированный слайд */
+
+/* Стрелка */
+
+/* Стрелка влево */
+
+/* Стрелка вправо */
+
+/* Стрелка не активная */
+
+/* Точки (булиты) */
+
+/* Активная точка */
+
+/* Элемент точки */
+
+.slider {
+  position: relative;
+  padding: 0px 60px;
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Стрелка не активная */
+  /* Активная точка */
+  /* Элемент точки */
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0 0 0;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 50px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../img/icon-left.png") 0 0/100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../img/icon-right.png") 0 0/100% no-repeat;
+}
+
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.slider .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.sliderbig .sliderbig__item {
   text-align: center;
-  max-width: 80vh;
-  margin: 10vh 10vh 0 10vh;
 }
 
-.cont1 .zaglav {
-  font-weight: 900;
-  font-size: 72px;
-  margin-bottom: 4%;
+.webp .slider .slick-arrow.slick-prev {
+  background: url(../img/icon-left.webp) 0 0/100% no-repeat;
 }
 
-.cont1 .title {
-  font-weight: 900;
-  font-size: 24px;
-}
-
-.cont1 .text {
-  font-size: 15px;
-  line-height: 1.6em;
-  margin-top: 5%;
-}
-
-.webp .main_background {
-  background-image: url(/img/img2.webp);
-}
-
-@media only screen and (max-width: 1600px) {
-  .utp .zaglavUtp1 {
-    font-size: 3.5vw;
-  }
-
-  .utp .zaglavUtp2 {
-    font-size: 5.5vw;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .utp {
-    margin: 20% 10% 10% 10%;
-  }
-
-  .utp .zaglavUtp1 {
-    font-size: 6vw;
-  }
-
-  .utp .zaglavUtp2 {
-    font-size: 7vw;
-  }
-
-  .main_background {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .cont1 {
-    max-width: 96vh;
-    margin: 10vh 2vh 0 2vh;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .cont1 {
-    max-width: 100vh;
-    margin: 10vh 20vh 0 20vh;
-  }
-}
-
-@media only screen and (max-width: 544px) {
-  .utp .zaglavUtp1 {
-    font-size: 10vw;
-  }
-
-  .utp .zaglavUtp2 {
-    font-size: 12vw;
-  }
-
-  .utp .textUtp {
-    margin: 4vh 0 0 0;
-  }
-
-  .utp .button {
-    margin: 4vh 0 0 0;
-  }
+.webp .slider .slick-arrow.slick-next {
+  background: url(../img/icon-right.webp) 0 0/100% no-repeat;
 }
