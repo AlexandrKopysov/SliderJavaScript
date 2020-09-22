@@ -39,6 +39,18 @@ $(document).ready(function () {
         variableWidth:false,
         
         asNavFor:".sliderbig",
+        // Если разрешение  меньше 768 , то показывать только 2 слайда
+        responsive:[
+            {
+                breakpoint:768,
+                settings:{
+                    slidesToShow:2
+                }
+            }
+        ],
+        // Переместить стрелки управления в другой блок
+        appendArrows:$('.content'),
+        
     });
     $('.sliderbig').slick({
         arrows:false,
